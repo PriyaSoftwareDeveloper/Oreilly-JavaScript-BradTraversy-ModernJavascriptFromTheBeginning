@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Variables and Constants</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // ways to declare a variable
+    // var, let, const
+
+    let firstName = "John";
+    let lastName = "Doe";
+    document.write(firstName,  lastName);
+
+    var age = 30;    
+    document.write(age);
+
+    // Naming conventions
+    // - only letters, numbers, underscores and dollar signs
+    // - cant start with a number
+    
+    // Multi - Word Formatting
+    // firstName = camelCase
+    // first_name = underscore
+    // FirstName = PascalCase
+    // firstname = lowercase
+
+    let name1 = "Brad";
+    document.write(name1);
+
+    //Re-assigning Variables
+    age = 31;
+    document.write(age);
+
+    let score;
+    score = 1;
+    document.write(score);
+
+    if (true){
+        score = score + 1;
+    }
+    document.write(score);
+
+    // const x = 100;
+    // x = 200; // TypeError: Assignment to constant variable.
+    // document.write(x);
+
+    const arr = [1, 2, 3, 4];
+    arr.push(5);
+    console.log(arr);
+
+    const person = {
+        name : "Brad",
+    }
+    console.log(person.name);
+    person.name = "John";
+    console.log(person.name);
+    
+    person.email = "brad@gmail.com";
+    console.log(person.email);
+
+    // Declare multiple values at once
+    let a, b, c; // if we print we will get undefined message
+
+    const d = 10, e = 20, f = 30;
+    //or
+    const g = 40,
+    h = 50,
+    i = 60;
+
+    console.log(d);
+    console.log(a);
+    console.log(g);
+
+</script>
+</html>
