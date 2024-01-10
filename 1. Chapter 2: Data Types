@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // Number
+    const age = 30;
+
+    console.log(age, typeof age);
+    document.write(" ", age, " - ", typeof age);
+
+    // String
+    const firstName = " Sara - ";
+
+    const output = firstName;
+
+    console.log(output, typeof output);
+
+    // Boolean
+    const hasKids = true;
+    console.log(hasKids, typeof hasKids);
+
+    // Null
+    const aptNumber = null;
+    console.log(aptNumber, typeof aptNumber);
+
+    //undefined
+    let score;
+    console.log(score, typeof score);
+
+    //Symbol
+    const id = Symbol("id");
+    console.log(id, typeof id);
+
+    //BigInt
+    const n = 9007199254740991n;
+    console.log(n, typeof n);
+
+    //Reference Types
+    const numbers = [1, 2, 3, 4];
+    console.log(numbers, typeof numbers);
+
+    const person = {
+      name: "Brad",
+    };
+    console.log(person, typeof person);
+
+    function sayHello() {
+      console.log("Hello");
+    }
+    console.log(sayHello, typeof sayHello);
+  </script>
+</html>
