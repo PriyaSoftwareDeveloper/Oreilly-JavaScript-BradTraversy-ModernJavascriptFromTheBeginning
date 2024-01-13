@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Primitive Versus Reference Types</title>
+  </head>
+  <body></body>
+  <script>
+    // values are stored on the stack
+    const name = "John";
+    const age = "30";
+
+    // Reference values are stored on the heap
+    const person = {
+      name: "Brad",
+      age: 40,
+    };
+
+    let newName = name;
+    console.log(name, newName);
+    newName = "Johnathan";
+    console.log(name, newName);
+
+    let newPerson = person;
+    console.log(person, newPerson);
+
+    newPerson.name = "Bradley";
+    console.log(person, newPerson);
+  </script>
+</html>
